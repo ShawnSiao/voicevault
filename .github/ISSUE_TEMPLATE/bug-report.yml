@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible VoiceVault problem without including private data.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach databases, cookies, credentials, browser profiles, or real-person archives.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Describe the observed behavior and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Use synthetic data and list the smallest reproducible sequence.
+      placeholder: |
+        1. Start VoiceVault with ...
+        2. Create a synthetic person ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: VoiceVault version or commit
+      placeholder: v0.89.0 or a commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized diagnostics
+      description: Remove local paths, account IDs, content, credentials, and personal data.
+      render: shell
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety confirmation
+      options:
+        - label: I removed credentials, personal data, real posts, account identifiers, and local database content.
+          required: true

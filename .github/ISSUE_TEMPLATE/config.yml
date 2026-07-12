@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/ShawnSiao/voicevault/security/policy
+    about: Report vulnerabilities privately and do not attach sensitive local data.
+  - name: Questions and local setup help
+    url: https://github.com/ShawnSiao/voicevault/discussions
+    about: Ask installation, import, and local deployment questions in Discussions.
