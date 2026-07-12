@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voicevault"
+version = "0.89.0"
+description = "Local-first public content archive and cited knowledge-base tool"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.scripts]
+voicevault = "voicevault.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

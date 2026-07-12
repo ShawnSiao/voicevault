@@ -1,0 +1,23 @@
+{
+  "type": "design",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "VoiceVault Local RAG MVP": {
+      "versions": [
+        {
+          "path": "VoiceVault Local RAG Prototype.html",
+          "createdAt": "2026-07-10T15:06:44.446Z",
+          "status": "needs-review",
+          "subtitle": "人物归档、采集交接、混合检索与多人问答",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-07-10T15:06:44.447Z",
+  "updatedAt": "2026-07-10T15:06:44.447Z"
+}
